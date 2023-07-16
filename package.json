@@ -1,0 +1,15 @@
+{
+  "name": "expense-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "node backend/server.js",
+    "start:frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "author": "Jeremiah Lipscomb",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
