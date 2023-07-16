@@ -19,9 +19,9 @@ Expense Explorer will offer the following key features:
 
 Expense Explorer is built using the following technologies:
 
-- Frontend: [React]
-- Backend: [Node.js] with [Express]
-- Database: [MongoDB]
+- Frontend: React
+- Backend: Node.js with Express
+- Database: MongoDB
 
 ## How it Works
 
