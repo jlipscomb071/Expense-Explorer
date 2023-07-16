@@ -1,4 +1,4 @@
-# Expense Explorer (WIP)
+# Expense Explorer (IN EARLY DEVELOPMENT)
 
 ## Author
 
