@@ -1,28 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import React, { useEffect } from 'react';
-import axios from 'axios';
 
 function App() {
-  useEffect(() => {
-    axios.get('/api/data')
-      .then(response => {
-        // Process the response data
-        console.log(response.data);
-      })
-      .catch(error => {
-        // Handle errors
-        console.error(error);
-      });
-  }, []);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Expense Explorer
-        </p>
+        <h1 className="App-title">Expense Explorer</h1>
       </header>
+      <main className="App-main">
+        <div className="App-bubbles">
+          <a href="/dashboard" className="App-bubble">
+            <span className="App-bubble-text">Budget Dashboard</span>
+          </a>
+          <a href="/expenses" className="App-bubble">
+            <span className="App-bubble-text">Expenses</span>
+          </a>
+          <a href="/reports" className="App-bubble">
+            <span className="App-bubble-text">Spending Reports</span>
+          </a>
+        </div>
+      </main>
     </div>
   );
 }
