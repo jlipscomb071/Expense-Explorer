@@ -1,20 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.js
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import BalancePage from "./components/BalancePage";
+import SavingsPage from "./components/SavingsPage";
+import SpendingPage  from "./components/SpendingPage";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Expense Explorer</h1>
-    </>
-  )
-}
+    <div style={styles.app}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/balance" element={<BalancePage />} />
+          <Route path="/savings" element={<SavingsPage />} />
+          <Route path="/spending" element={<SpendingPage />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+};
 
-export default App
+const styles = {
+  app: {
+    padding: 50,
+  },
+};
+
+export default App;
