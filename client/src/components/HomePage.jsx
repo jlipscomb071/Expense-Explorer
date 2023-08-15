@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1>Expense Explorer</h1>
       <Link to="/balance">
         <button>Balance</button>
       </Link>
