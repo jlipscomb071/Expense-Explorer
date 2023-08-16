@@ -10,10 +10,9 @@ Expense Explorer is a full-stack personal finance application designed to manage
 
 Expense Explorer will offer the following key features:
 
-- Transaction Categorization: Categorize your income and expenses for better organization and analysis.
-- Budget Alerts: Set budget limits and receive alerts when you are close to exceeding them.
-- Spending Visualization: Visualize your spending patterns through charts and graphs.
-- Predictive Analysis: Analyze your historical data to make predictions about future expenses.
+- All-Account Overview: View all your accounts in one place
+- Transaction Tracker: Easily categorize and track your income and expenses
+- Savings Snapshot: Monitor your savings and see details for each transaction
 
 ## Technologies Used
 
