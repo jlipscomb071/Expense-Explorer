@@ -1,20 +1,22 @@
-// HomePage.js
 import React from "react";
 import { Link } from "react-router-dom";
+import './HomePage.css';
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Expense Explorer</h1>
-      <Link to="/balance">
-        <button>Balance</button>
-      </Link>
-      <Link to="/savings">
-        <button>Savings</button>
-      </Link>
-      <Link to="/spending">
-        <button>Spending</button>
-      </Link>
+    <div className="homePageContainer">
+      <h1 className="homeTitle">Expense Explorer</h1>
+      <div className="buttonGroup">
+        <Link to="/balance" className="homeLink">
+          Balance
+        </Link>
+        <Link to="/savings" className="homeLink">
+          Savings
+        </Link>
+        <Link to="/spending" className="homeLink">
+          Spending
+        </Link>
+      </div>
     </div>
   );
 };
