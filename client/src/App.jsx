@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import BalancePage from "./components/BalancePage";
-import SavingsPage from "./components/SavingsPage";
-import SpendingPage  from "./components/SpendingPage";
+import React from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import HomePage from "./components/HomePage"
+import BalancePage from "./components/BalancePage"
+import SavingsPage from "./components/SavingsPage"
+import SpendingPage  from "./components/SpendingPage"
 
 const App = () => {
   return (
@@ -17,13 +17,13 @@ const App = () => {
         </Routes>
       </Router>
     </div>
-  );
-};
+  )
+}
 
 const styles = {
   app: {
     padding: 50,
-  },
-};
+  }
+}
 
-export default App;
+export default App

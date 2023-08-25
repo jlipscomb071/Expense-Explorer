@@ -1,5 +1,5 @@
-const dotenv = require("dotenv");
-const path = require("path");
+const dotenv = require("dotenv")
+const path = require("path")
 const { fileURLToPath } = require('url');
 const envPath = path.resolve(__dirname, '..', '.env')
 
@@ -19,12 +19,12 @@ const connectionParams={
     useUnifiedTopology: true
 }
 
-mongoose.connect(url, connectionParams);
+mongoose.connect(url, connectionParams)
 
 
 const connection = mongoose.connection;
 
-connection.on("error", console.error.bind(console, "connection error: "));
+connection.on("error", console.error.bind(console, "connection error: "))
 connection.once("open", async function () {
     console.log("Connected successfully");
-});
+})
