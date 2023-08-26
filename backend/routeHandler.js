@@ -20,4 +20,18 @@ expressConnection.post(`/${collection}`, async (request, response) => {
     }
 })
 
+expressConnection.get(`/${collection}`, async (request, response) => {
+    const entry = await schema.find({})
+
+    try {
+        response.send(entry)
+        console.log("Sucessfully fetched entry")
+    } catch(error){
+        response.status(500).send(error)
+        console.log("Error fetching entry: ", error)
+    }
+})
+
+
+
 export default expressConnection
