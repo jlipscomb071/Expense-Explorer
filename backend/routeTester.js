@@ -2,13 +2,13 @@ import fetch from 'node-fetch'
 import { collection } from './schemas/defaultSchema.js'
 
 // const body = {
-//    checking: 100,
+//    checking: 224.69,
 //    savings: 8500
 // }
 // const controller = new AbortController();
 // const signal = controller.signal;
 
-//POST TEST:
+// POST TEST:
 // const fetchPromise = fetch(`http://localhost:3000/${collection}`, {
 //     method: "POST",
 //     body: JSON.stringify(body),
@@ -35,7 +35,7 @@ import { collection } from './schemas/defaultSchema.js'
 //     console.error("POST request failed:", error)
 // })
 
-// GET TEST:
+//GET TEST:
 // const fetchPromise = fetch(`http://localhost:3000/${collection}`)
 // .then((response) => {
 //     if (!response.ok) {
