@@ -4,6 +4,7 @@ import dotenv  from "dotenv"
 import path from "path"
 import { fileURLToPath } from "url"
 import mongoose from "mongoose"
+import cors from 'cors'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -25,6 +26,7 @@ const connectionParams={
 
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 mongoose.connect(url, connectionParams)
 const connection = mongoose.connection
